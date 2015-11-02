@@ -1,4 +1,4 @@
 FROM java:8
-
-RUN ["./gradlew", "run"]
+COPY [".","/"]
+ENTRYPOINT ["./gradlew", "run"]
 
